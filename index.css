@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+body {
+    background: url("background.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+section {
+    display: none;
+}
+
+.content {
+    height: 100vh;
+    padding: 0 0.5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 330px;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    backdrop-filter: blur(5px);
+}
+
+form .title {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 1.5px solid;
+    margin-bottom: 3rem;
+}
+
+.input-box {
+    position: relative;
+    padding: 0.4rem 0.5rem 0;
+}
+
+.label {
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    transition: 0.5s;
+}
+
+.box.focus .label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: none;
+    position: absolute;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.login-button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    background: linear-gradient(90deg, #cf6c3d, #71412a);
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sign {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.sign a {
+    font-weight: 800;
+}
+
+.forgot {
+    margin-bottom: 1.5rem;
+    text-align: end;
+}
+
+@media screen and (min-width: 968px) {
+    .content {
+        grid-template-columns: 1.5fr 1fr;
+        justify-self: center;
+    }
+
+    form {
+        width: 360px;
+    }
+
+    section {
+        display: none;
+        max-width: 600px;
+        display: grid;
+        gap: 2rem;
+        text-align: left;
+        justify-self: center;
+        padding: 2rem;
+    }
+
+    section .title {
+        font-size: 2.7rem;
+        letter-spacing: 0.02em;
+    }
+
+    .get-started {
+        text-decoration: none;
+        border: 2px solid;
+        font-weight: 500;
+        padding: 10px 40px;
+        border-radius: 40px;
+        transition: 0.5s;
+    }
+
+    .get-started:hover {
+        background: #1e0b04;
+    }
+}
